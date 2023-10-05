@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+<meta charset="UTF-8">
+<title>学内掲示板 - 投稿画面</title>
+
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="format-detection" content="">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+       <h1>学内掲示板</h1>
+       <section>
+            <h2>投稿画面</h2>
+            <form action="#" method="post">
+                <b>掲示物タイトル: </b><input type="text" name="title"><br>
+                <h4>掲示物タグ</h4>
+                <b>学年: </b>
+                    <input type="checkbox" name="gakunen" id="gakunen1" value="1"><label for="gakunen1">1学年</label>
+                    <input type="checkbox" name="gakunen" id="gakunen2" value="2"><label for="gakunen2">2学年</label>
+                    <input type="checkbox" name="gakunen" id="gakunen3" value="3"><label for="gakunen3">3学年</label>
+                    <input type="checkbox" name="gakunen" id="gakunen4" value="4"><label for="gakunen4">4学年</label>
+                <br>
+                <b>学科・コース: </b>
+                    <input type="checkbox" name="gakka" id="gakka1" value="1"><label for="gakka1">機械工学コース</label>
+                    <input type="checkbox" name="gakka" id="gakka2" value="2"><label for="gakka2">電気電子通信工学コース</label>
+                    <input type="checkbox" name="gakka" id="gakka3" value="3"><label for="gakka3">システム情報工学コース</label>
+                <br>
+                    <input type="checkbox" name="gakka" id="gakka4" value="4"><label for="gakka4">生命環境科学コース</label>
+                    <input type="checkbox" name="gakka" id="gakka5" value="5"><label for="gakka5">建築・土木工学コース</label>
+                    <input type="checkbox" name="gakka" id="gakka6" value="6"><label for="gakka6">感性デザイン学科</label>
+                    <input type="checkbox" name="gakka" id="gakka7" value="7"><label for="gakka7">大学院</label>
+                <br>
+                <b>掲示板: </b>
+                    <input type="checkbox" name="keijiban" id="keijiban1" value="1"><label for="keijiban1">教務課</label>
+                    <input type="checkbox" name="keijiban" id="keijiban2" value="2"><label for="keijiban2">学生支援担当</label>
+                    <input type="checkbox" name="keijiban" id="keijiban3" value="3"><label for="keijiban3">学生課</label>
+                    <input type="checkbox" name="keijiban" id="keijiban4" value="4"><label for="keijiban4">学友会</label>
+                    <input type="checkbox" name="keijiban" id="keijiban5" value="5"><label for="keijiban5">アルバイト</label>
+                <br>
+                <h4>期間設定</h4>
+                <label for="startdate">掲載開始:</label>
+                <input type="date" id="startdate" name="掲載開始" value=""><input type="time" id="starttime" name="開始時間" value="">
+                <br>
+                <label for="enddate">掲載終了:</label>
+                <input type="date" id="enddate" name="掲載終了" value=""><input type="time" id="endtime" name="終了時間" value="">
+                <br>
+                <label for="recruitmentdate">募集終了:</label>
+                <input type="date" id="recruitmentdate" name="募集終了" value=""><input type="time" id="recruitmenttime" name="募集終了時間" value="">
+                <p>※募集終了期間が無い場合は入力しない</p>
+                <h4>添付ファイル</h4>
+                <input type="file" name="test">
+                <h4>投稿者名</h4>
+                <input type="text" name="name">
+            </form>
+       </section>
+       <section>
+            <br>
+            <a href="toukou_completedf.html" title="">投稿</a>
+       </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
